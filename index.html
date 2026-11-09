@@ -109,13 +109,13 @@ and the adventures that begin when the workday ends.
 <h2>Welcome</h2>
 
 <p>
-After 26 years of public service, retirement is not
+After 25 years of public service, retirement is not
 the end of the story. It is the beginning of a new one.
 </p>
 
 <p>
 This site follows my journey toward retirement and beyond:
-travelling, exploring places, improving my home,
+travelling, exploring Ecuador, improving my home,
 taking road trips, discovering new opportunities,
 and learning to live life on my own schedule.
 </p>
@@ -134,6 +134,26 @@ Loading...
 Every day is one step closer to life after the login.
 </p>
 
+<hr style="margin:20px 0;">
+
+<p>
+<strong>Last Login</strong><br>
+📅 January 19, 2027
+</p>
+
+<p>
+The final workday. The final login after 25 years of public service.
+</p>
+
+<p>
+<strong>First Day of the Adventure</strong><br>
+🌎 January 20, 2027
+</p>
+
+<p>
+The first morning of freedom, curiosity, travel, and new experiences.
+</p>
+
 </section>
 
 <section>
@@ -149,7 +169,11 @@ Every day is one step closer to life after the login.
 </div>
 
 <div class="milestone">
-⬜ First month retired
+⬜ Last Login - January 19, 2027
+</div>
+
+<div class="milestone">
+⬜ First Day of the Adventure - January 20, 2027
 </div>
 
 <div class="milestone">
@@ -176,15 +200,18 @@ Every day is one step closer to life after the login.
 
 <p>
 Today I launched Life After The Login.
-What began as retirement planning has grown into
-something bigger: a journey of exploration,
-new experiences, and finding out what life looks like
-when work is no longer defined by a job description.
 </p>
 
 <p>
-This website will serve as my travel journal,
-retirement diary, and scrapbook of adventures yet to come.
+January 19, 2027 marks my final login after 25 years of public service.
+January 20, 2027 marks the beginning of a new adventure.
+This website exists to document everything that comes after the login.
+</p>
+
+<p>
+What began as retirement planning has grown into something bigger:
+a journey of exploration, new experiences, travel, and discovering
+what life looks like when work is no longer defining every weekday.
 </p>
 
 </div>
@@ -196,10 +223,10 @@ retirement diary, and scrapbook of adventures yet to come.
 <h2>🌎 Upcoming Adventures</h2>
 
 <ul>
-<li>Planning retirement milestones</li>
-<li>Exploring places opportunities</li>
+<li>Preparing for retirement</li>
+<li>Exploring Ecuador opportunities</li>
 <li>Backyard transformation projects</li>
-<li>Road Trips</li>
+<li>Ontario and Maritime road trips</li>
 <li>Learning new technologies and AI tools</li>
 <li>Creating new income streams after retirement</li>
 </ul>
@@ -243,7 +270,7 @@ const diff = retirementDate - now;
 
 if(diff <= 0){
 document.getElementById("days").innerHTML =
-"🎉 Retirement Has Arrived!";
+"🎉 Welcome to Life After The Login!";
 return;
 }
 
@@ -251,7 +278,7 @@ const days =
 Math.floor(diff / (1000 * 60 * 60 * 24));
 
 document.getElementById("days").innerHTML =
-days + " Days Remaining";
+"🧭 " + days + " days until the first day of the adventure";
 
 }
 
