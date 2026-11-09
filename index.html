@@ -1,114 +1,265 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>Life After The Login</title>
 
 <style>
+
 body{
-    font-family: Arial, sans-serif;
-    background:#f4f6f7;
+    font-family: Georgia, serif;
+    background:#f8f4ec;
+    color:#333;
     margin:0;
-    padding:0;
-    line-height:1.6;
+    line-height:1.8;
 }
 
 header{
-    background:#2c3e50;
+    background:linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+
+    background-size:cover;
+    background-position:center;
+
     color:white;
-    padding:50px 20px;
     text-align:center;
+    padding:120px 20px;
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.4rem;
 }
 
 main{
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
     padding:30px;
 }
 
 section{
     background:white;
+    margin-bottom:25px;
     padding:25px;
-    margin-bottom:20px;
-    border-radius:10px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
 }
 
-h1,h2{
-    margin-top:0;
+.countdown{
+    text-align:center;
+    background:#d6eaf8;
+}
+
+#days{
+    font-size:3rem;
+    font-weight:bold;
+    color:#2c3e50;
+}
+
+.journal-entry{
+    border-left:5px solid #3498db;
+    padding-left:20px;
+}
+
+.milestone{
+    padding:12px;
+    margin-bottom:10px;
+    background:#fdf2e9;
+    border-radius:8px;
 }
 
 footer{
     text-align:center;
-    padding:20px;
+    padding:30px;
     color:#777;
 }
+
+a{
+    color:#2c6fb8;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Life After The Login</h1>
-    <p>A journey from career to curiosity.</p>
+
+<h1>Life After The Login</h1>
+
+<p>
+A travel journal of retirement, reinvention,
+and the adventures that begin when the workday ends.
+</p>
+
 </header>
 
 <main>
 
 <section>
-    <h2>Welcome</h2>
 
-    <p>
-    After 25 years in public service, retirement isn't an ending.
-    It's the beginning of a new chapter.
-    </p>
+<h2>Welcome</h2>
 
-    <p>
-    This site follows my journey as I explore travel, home projects,
-    new adventures, personal growth, and the question many retirees ask:
-    "What's next?"
-    </p>
+<p>
+After 26 years of public service, retirement is not
+the end of the story. It is the beginning of a new one.
+</p>
+
+<p>
+This site follows my journey toward retirement and beyond:
+travelling, exploring places, improving my home,
+taking road trips, discovering new opportunities,
+and learning to live life on my own schedule.
+</p>
+
+</section>
+
+<section class="countdown">
+
+<h2>⏳ Retirement Countdown</h2>
+
+<div id="days">
+Loading...
+</div>
+
+<p>
+Every day is one step closer to life after the login.
+</p>
+
 </section>
 
 <section>
-    <h2>Current Adventures</h2>
 
-    <ul>
-        <li>Preparing for retirement</li>
-        <li>Exploring Ecuador opportunities</li>
-        <li>Backyard transformation projects</li>
-        <li>Sprinter Van travel</li>
-        <li>Building new income streams</li>
-    </ul>
+<h2>🧭 Journey Milestones</h2>
+
+<div class="milestone">
+✅ Created Life After The Login
+</div>
+
+<div class="milestone">
+⬜ Final retirement paperwork
+</div>
+
+<div class="milestone">
+⬜ First month retired
+</div>
+
+<div class="milestone">
+⬜ Ecuador exploration trip
+</div>
+
+<div class="milestone">
+⬜ First extended Sprinter van adventure
+</div>
+
+<div class="milestone">
+⬜ One year into retirement
+</div>
+
 </section>
 
 <section>
-    <h2>Latest Thoughts</h2>
 
-    <p>
-    Coming soon: stories, lessons learned,
-    challenges, successes, and unexpected discoveries from life after work.
-    </p>
+<h2>📖 Journal Entry #1</h2>
+
+<div class="journal-entry">
+
+<h3>Starting the Journey</h3>
+
+<p>
+Today I launched Life After The Login.
+What began as retirement planning has grown into
+something bigger: a journey of exploration,
+new experiences, and finding out what life looks like
+when work is no longer defined by a job description.
+</p>
+
+<p>
+This website will serve as my travel journal,
+retirement diary, and scrapbook of adventures yet to come.
+</p>
+
+</div>
+
 </section>
 
 <section>
-    <h2>Get in Touch</h2>
 
-    <p>
-    Questions, comments, or simply sharing your own retirement journey?
-    I'd love to hear from you.
-    </p>
+<h2>🌎 Upcoming Adventures</h2>
 
-    <p>
-        <a href="mailto:youremail@example.com">
-            Send an Email
-        </a>
-    </p>
+<ul>
+<li>Planning retirement milestones</li>
+<li>Exploring places opportunities</li>
+<li>Backyard transformation projects</li>
+<li>Road Trips</li>
+<li>Learning new technologies and AI tools</li>
+<li>Creating new income streams after retirement</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>✉️ Connect</h2>
+
+<p>
+Following a similar path or simply curious about the journey?
+I'd love to hear from you.
+</p>
+
+<p>
+<a href="mailto:your-email@example.com">
+Send Me a Message
+</a>
+</p>
+
 </section>
 
 </main>
 
 <footer>
-    © 2026 Life After The Login
+
+© 2026 Life After The Login
+
 </footer>
+
+<script>
+
+const retirementDate =
+new Date("2028-03-31");
+
+function updateCountdown() {
+
+const now = new Date();
+const diff = retirementDate - now;
+
+if(diff <= 0){
+document.getElementById("days").innerHTML =
+"🎉 Retirement Has Arrived!";
+return;
+}
+
+const days =
+Math.floor(diff / (1000 * 60 * 60 * 24));
+
+document.getElementById("days").innerHTML =
+days + " Days Remaining";
+
+}
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+</script>
 
 </body>
 </html>
